@@ -30,10 +30,20 @@ class Book {
      */
      private $genre;
 
+      /**
+     * @ORM\Column(type="text")
+     */
+     private $description;
+
      /**
      * @ORM\Column(type="boolean", nullable=true)
      */
      private $published = false;
+
+     /**
+     * @ORM\Column(type="text")
+     */
+     private $img;
 
 
     /**
@@ -119,6 +129,30 @@ class Book {
     }
 
     /**
+     * Set description
+     *
+     * @param string $description
+     *
+     * @return Book
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
      * Set published
      *
      * @param boolean $published
@@ -140,5 +174,29 @@ class Book {
     public function getPublished()
     {
         return $this->published;
+    }
+
+    /**
+     * Set img
+     *
+     * @param string $img
+     *
+     * @return Book
+     */
+    public function setImg($img)
+    {
+        $this->img = $img;
+
+        return $this;
+    }
+
+    /**
+     * Get img
+     *
+     * @return string
+     */
+    public function getImg()
+    {
+        return $this->img;
     }
 }

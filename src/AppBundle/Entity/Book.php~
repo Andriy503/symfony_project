@@ -30,9 +30,19 @@ class Book {
      */
      private $genre;
 
+      /**
+     * @ORM\Column(type="text")
+     */
+     private $description;
+
      /**
      * @ORM\Column(type="boolean", nullable=true)
      */
      private $published = false;
+
+     /**
+     * @ORM\Column(type="text")
+     */
+     private $img;
 
 }

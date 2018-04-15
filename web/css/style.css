@@ -1,0 +1,14 @@
+
+.add_book_send {
+	color: white;
+}
+
+.add_book_send:hover {
+	color: white;
+}
+
+#all_book  {
+	font-size: 24px;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+}
